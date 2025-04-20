@@ -2,7 +2,7 @@ const potrace = require("potrace");
 const fs = require("fs");
 const path = require("path");
 const ProgressBar = require("progress");
-const inputDir = path.join(__dirname, "crop_v5");
+const inputDir = path.join(__dirname, "sourcePNG");
 const outputDir = path.join(__dirname, "svg_separate");
 
 // 讀取資料夾中的所有檔案

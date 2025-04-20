@@ -12,6 +12,7 @@
     "graceful-fs": "^4.2.11",
     "potrace": "^2.1.8",
     "progress": "^2.0.3",
+    "python-shell": "^5.0.0",
     "svgicons2svgfont": "^12.0.0",
     "tiny-async-pool": "^2.1.0"
   }

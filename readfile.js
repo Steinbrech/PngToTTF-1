@@ -33,7 +33,7 @@ fontStream
 files.forEach((file) => {
   if (path.extname(file) === '.svg') {
     // 從檔名中提取Unicode
-    const unicodeMatch = file.match(/U\+([0-9A-Fa-f]+)/);
+    const unicodeMatch = file.match(/u\+([0-9A-Fa-f]+)/);
     if (unicodeMatch) {
       const unicode = [String.fromCodePoint(parseInt(unicodeMatch[1], 16))];
       const name = 'icon_' + unicodeMatch[1]; // 使用Unicode的十六進位表示作為名稱
