@@ -1,6 +1,7 @@
 pre-requisite
-1. mkdir svg_separate, mkdir final_font, mkdir sourcePNG, mkdir pico
-2. npm install, pip install picosvg
+1. mkdir svg_separate, final_font, sourcePNG, pico
+2. npm install
+3. pip install picosvg
 
 steps
 1. Put file into sourcePNG

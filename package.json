@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.8.4",
+    "form-data": "^4.0.2",
     "graceful-fs": "^4.2.11",
     "potrace": "^2.1.8",
     "progress": "^2.0.3",
