@@ -2,8 +2,9 @@ const potrace = require("potrace");
 const fs = require("fs");
 const path = require("path");
 const ProgressBar = require("progress");
-const inputDir = path.join(__dirname, "sourcePNG");
-const outputDir = path.join(__dirname, "svg_separate");
+const WS = path.resolve(process.cwd(), '../workspace');
+const inputDir = path.join(WS, "sourcePNG");
+const outputDir = path.join(WS, "svg_separate");
 
 // 讀取資料夾中的所有檔案
 fs.readdir(inputDir, function (err, files) {
@@ -38,7 +39,7 @@ fs.readdir(inputDir, function (err, files) {
         // 更新進度條
         progressBar.tick();
 
-        // 继续处理下一个文件
+        // 遞迴處理下一個檔案
         processFile(index + 1);
       });
     } else {

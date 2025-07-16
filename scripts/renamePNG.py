@@ -32,5 +32,8 @@ def rename_unicode_files(folder):
 
 if __name__ == "__main__":
     # 指定要處理的資料夾路徑
-    folder_path = "sourcePNG"
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    workspace_dir = os.path.abspath(os.path.join(script_dir, os.pardir, "workspace"))
+    folder_path = os.path.join(workspace_dir, "sourcePNG")
+    # print("要處理的資料夾：", folder_path)
     rename_unicode_files(folder_path)

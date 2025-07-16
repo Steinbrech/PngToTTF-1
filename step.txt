@@ -1,7 +1,0 @@
-pre-requisite
-1. mkdir svg_separate, mkdir final_font, mkdir sourcePNG, mkdir pico
-2. npm install, pip install picosvg
-
-steps
-1. Put file into sourcePNG
-2. node runAll.js

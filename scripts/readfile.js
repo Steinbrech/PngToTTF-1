@@ -3,9 +3,13 @@ const fs = require('graceful-fs');
 const path = require('path');
 const ProgressBar = require('progress');
 
+// 設定工作區常數
+const WORKSPACE = path.resolve(process.cwd(), '../workspace');
+
 const fontName = 'MyFont';
-const outputSVGFontPath = 'final_font/fontpico.svg'; // 輸出SVG字體的路徑
-const inputFolder = 'pico'; // 包含SVG檔案的資料夾路徑
+const inputFolder = path.join(WORKSPACE, 'pico'); // 包含SVG檔案的資料夾路徑
+const outputSVGFontPath = path.join(WORKSPACE, 'final_font', 'fontpico.svg'); // 輸出SVG字體的路徑
+
 
 const fontStream = new SVGIcons2SVGFontStream({
   fontName: fontName,

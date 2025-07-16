@@ -9,7 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
     "graceful-fs": "^4.2.11",
+    "multer": "^2.0.1",
     "potrace": "^2.1.8",
     "progress": "^2.0.3",
     "python-shell": "^5.0.0",
