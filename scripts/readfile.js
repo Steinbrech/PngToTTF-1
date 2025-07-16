@@ -1,7 +1,7 @@
-const SVGIcons2SVGFontStream = require('svgicons2svgfont');
-const fs = require('graceful-fs');
-const path = require('path');
-const ProgressBar = require('progress');
+import SVGIcons2SVGFontStream from 'svgicons2svgfont';
+import fs from 'graceful-fs';
+import path from 'path';
+import ProgressBar from 'progress';
 
 // 設定工作區常數
 const WORKSPACE = path.resolve(process.cwd(), '../workspace');

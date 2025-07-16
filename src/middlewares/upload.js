@@ -10,7 +10,7 @@ const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, SRC_DIR);
   },
-  // 用時間戳＋原始檔名，避免衝突
+  // 原始檔名
   filename: (req, file, cb) => {
     cb(null, file.originalname);
   }

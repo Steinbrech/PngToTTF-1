@@ -1,7 +1,7 @@
-const potrace = require("potrace");
-const fs = require("fs");
-const path = require("path");
-const ProgressBar = require("progress");
+import potrace from "potrace";
+import fs from "fs";
+import path from "path";
+import ProgressBar from "progress";
 const WS = path.resolve(process.cwd(), '../workspace');
 const inputDir = path.join(WS, "sourcePNG");
 const outputDir = path.join(WS, "svg_separate");

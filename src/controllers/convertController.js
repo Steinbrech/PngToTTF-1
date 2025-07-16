@@ -27,10 +27,23 @@ export function convertHandler(req, res) {
     }
 
     // 回傳
-    res
-      .type('image/svg+xml')
-      .set('Content-Disposition', 'inline; filename="fontpico.svg"')
-      .sendFile(SVG_PATH);
+  res
+    .type('image/svg+xml')
+    .set('Content-Disposition', 'inline; filename="fontpico.svg"')
+    .sendFile(SVG_PATH, (err) => {
+      if (err) {
+        console.error('sendFile 錯誤：', err);
+      } else {
+        // 檔案已成功送給前端，現在執行 cleanfile.js
+        try {
+          console.log('開始清理 workspace …');
+          execSync('node cleanfile.js', { stdio: 'inherit', cwd: SCRIPTS_DIR });
+          console.log('清理完成');
+        } catch (cleanErr) {
+          console.error('清理檔案時出錯：', cleanErr);
+        }
+      }
+    });
 
   } catch (err) {
     console.error(err);

@@ -1,6 +1,7 @@
 {
   "name": "pngtottf-main",
   "version": "1.0.0",
+  "type": "module",
   "description": "將切割好的手寫字 png 檔打包成 ttf 檔流程 :dog:  網址：https://github.com/chiaoooo/PngToTTF",
   "main": "potrace.js",
   "scripts": {

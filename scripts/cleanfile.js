@@ -1,6 +1,6 @@
 // cleanfile.js
-const fs = require("fs");
-const path = require("path");
+import fs from 'fs';
+import path from 'path';
 
 /**
  * 清空指定資料夾(保留資料夾本身，刪除資料夾內所有檔案與子資料夾)

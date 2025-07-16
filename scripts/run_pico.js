@@ -1,8 +1,8 @@
-const fs = require("fs").promises;
-const { exec } = require("child_process");
-const util = require("util");
-const asyncPool = require("tiny-async-pool");
-const path = require("path");
+import fs from "fs/promises";
+import { exec } from "child_process";
+import util from "util";
+import asyncPool from "tiny-async-pool";
+import path from "path";
 
 const execPromise = util.promisify(exec);
 async function asyncPoolAll(...args) {
