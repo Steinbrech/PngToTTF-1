@@ -15,10 +15,11 @@ export function convertHandler(req, res) {
   }
 
   try {
-    // 1. 依序執行前面 4 支腳本
+    // 1. 依序執行前面 5 支腳本
     execSync('python renamePNG.py',  { stdio: 'inherit', cwd: SCRIPTS_DIR });
     execSync('node potrace.js',      { stdio: 'inherit', cwd: SCRIPTS_DIR });
     execSync('node run_pico.js',      { stdio: 'inherit', cwd: SCRIPTS_DIR });
+    execSync('node merge.js',        { stdio: 'inherit', cwd: SCRIPTS_DIR });
     execSync('node readfile.js',      { stdio: 'inherit', cwd: SCRIPTS_DIR });
 
     // 2. 確認 SVG 已生成

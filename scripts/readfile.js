@@ -13,6 +13,11 @@ const outputSVGFontPath = path.join(WORKSPACE, 'final_font', 'fontpico.svg'); //
 
 const fontStream = new SVGIcons2SVGFontStream({
   fontName: fontName,
+  normalize: true,           
+  fontHeight: 1024,          
+  descent: 0,                
+  preserveAspectRatio: true, 
+  centerVertically: false,   
 });
 
 const files = fs.readdirSync(inputFolder);
