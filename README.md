@@ -8,7 +8,7 @@
 2. svg_separate
 3. pico
 4. sourcePNG
-https://drive.google.com/file/d/1ETq1gKw8ZO-YMrr2ACJ0TTmU20LKZpdq/view?usp=drive_link
+* https://drive.google.com/file/d/1ETq1gKw8ZO-YMrr2ACJ0TTmU20LKZpdq/view?usp=drive_link
 ### 下載專案進行轉換
 
 ```
