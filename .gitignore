@@ -5,3 +5,4 @@ pico/
 node_modules/
 final_font/
 SVG/
+test.js
