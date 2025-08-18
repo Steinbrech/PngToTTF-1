@@ -1,14 +1,15 @@
 # 打包字體說明書
 ## 專案概述
-* 本專案（fork 自 [chiaoooo/PngToTTF](https://github.com/chiaoooo/PngToTTF)）提供一套把手寫或 PNG 字形切割並打包成 TTF 字型的流程與工具，此專案目的在於修改並建立自動化腳本之 API。
+* 本專案（fork 自 [chiaoooo/PngToTTF](https://github.com/chiaoooo/PngToTTF)）提供一套把手寫或 PNG 字形切割並打包成 TTF 字型的流程與工具，
+* 此專案目的在於修改並建立自動化腳本之 API。
 * 字體打包流程大致分為：
-  * PNG → SVG：以 potrace（專案內為 potrace.js）把每個 letter/png 向量化成單一 SVG。
+  * PNG → SVG：以 potrace（專案內為 potrace.js）把每個 letter/png 向量化成單一 SVG
     
-  * SVG → SVG：使用 Google 的 picosvg（專案內為 run_pico.js）調整 fill-rule、合併路徑等，避免後續打包問題。
+  * SVG → SVG：使用 Google 的 picosvg（專案內為 run_pico.js）
     
-  * SVG → SVG font file：用 readfile.js 把多個 SVG 打包成一個 fontpico.svg（最後拿到 FontForge）。
+  * SVG → SVG font file：用 readfile.js 把多個 SVG 打包成一個 fontpico.svg
  
-  * SVG → TTF（FontForge）：把 fontpico.svg 匯入 FontForge，Generate 為 TTF。
+  * SVG → TTF（FontForge）：把 fontpico.svg 匯入 FontForge，Generate 為 TTF
 * 細節請參考原始專案檔案與 README 。
 ## 安裝與使用
 ### 環境需求（Prerequisites）
